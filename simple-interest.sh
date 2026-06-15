@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "Nhập số tiền gốc (Principal):"
+echo "Enter the Principal:"
 read p
-echo "Nhập lãi suất (Rate of interest):"
+echo "Enter the Rate of Interest:"
 read r
-echo "Nhập thời gian (Time period):"
+echo "Enter the Time period:"
 read t
 s=$(echo "scale=2; ($p * $r * $t) / 100" | bc)
-echo "Lãi suất đơn là: $s"
+echo "The Simple Interest is: $s"
